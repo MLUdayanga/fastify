@@ -101,7 +101,7 @@ The type system heavily relies on generic properties to provide the most accurat
 4. Build and run the server code with `npm run build` and `npm run start`
 5. Query the api
    ```bash
-   curl localhost:8080/auth?username=admin&password=Password123!
+   curl "localhost:8080/auth?username=admin&password=Password123!"
    ```
    And it should return back `logged in!`
 6. But wait theres more! The generic interfaces are also available inside route level hook methods. Modify the previous route by adding a `preValidation` hook:
